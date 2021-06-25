@@ -1,0 +1,119 @@
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+  cursor: url(imagens/mata_mosquito.png) 30 30, auto;
+}
+
+body {
+  background-image: url(imagens/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.mosquito1 {
+  width: 50px;
+  height: 50px;
+}
+
+.mosquito2 {
+  width: 80px;
+  height: 80px;
+}
+
+.mosquito3 {
+  width: 110px;
+  height: 110px;
+}
+
+/* posição original da imagem */
+.ladoA {
+  transform: scaleX(1);
+}
+
+/* vira a imagem na horizintal */
+.ladoB {
+  transform: scaleX(-1);
+}
+
+.painel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid white;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.vidas {
+  float: left;
+}
+
+.cronometro {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Responsividade
+------------------------------------------*/
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra small devices (portrait phones, lexx than 576px) */
+@media (max-width: 575.98px) {
+    .caixa {
+        margin-top: 60px;
+    }
+
+    .imagem img {
+        width: 12em;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .caixa {
+        margin-top: 60px;
+    }
+
+    .imagem img {
+        width: 20em;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .caixa {
+        margin-top: 120px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .caixa {
+        margin-top: 120px;
+    }
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .caixa {
+        margin-top: 120px;
+    }
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up)*/
+  @media (min-width: 1400px) {
+    .caixa {
+        margin-top: 120px;
+    }
+  }
